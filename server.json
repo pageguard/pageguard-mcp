@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pageguard/pageguard-mcp",
+  "title": "PageGuard MCP",
+  "description": "Scan any project or website for privacy compliance issues directly in your AI coding tool. Detects tracking technologies, cookies, and third-party data collection. Works in Claude Code, Cursor, and Windsurf.",
+  "repository": {
+    "url": "https://github.com/pageguard/pageguard-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "pageguard-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "PAGEGUARD_API_KEY",
+          "description": "PageGuard API key — required for URL scanning and document generation, optional for local scans",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

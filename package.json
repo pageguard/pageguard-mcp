@@ -1,6 +1,7 @@
 {
   "name": "pageguard-mcp",
   "version": "1.0.0",
+  "mcpName": "io.github.pageguard/pageguard-mcp",
   "description": "PageGuard MCP server — privacy compliance scanning for AI coding tools",
   "type": "module",
   "main": "dist/index.js",
