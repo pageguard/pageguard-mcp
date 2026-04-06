@@ -1,0 +1,14 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      apiKey:
+        type: string
+        description: PageGuard API key (optional for local scans, required for URL scan and document generation)
+  commandFunction: |
+    config => ({
+      command: 'npx',
+      args: ['pageguard-mcp'],
+      env: config.apiKey ? { PAGEGUARD_API_KEY: config.apiKey } : {}
+    })
