@@ -1,0 +1,1552 @@
+[
+  {
+    "name": "Google Analytics 4",
+    "patterns": [
+      "gtag('config', 'G-",
+      "googletagmanager.com/gtag/js",
+      "google-analytics.com/g/"
+    ],
+    "dependencies": [
+      "@react-native-firebase/analytics",
+      "firebase",
+      "com.google.firebase:firebase-analytics",
+      "firebase_analytics"
+    ],
+    "category": "analytics",
+    "categoryLabel": "Analytics",
+    "summary": "Tracks page views, sessions, and user behavior",
+    "dataTypeCount": 7,
+    "cookieNames": [
+      "_ga",
+      "_ga_*"
+    ],
+    "thirdPartyName": "Google LLC",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Google Universal Analytics (legacy)",
+    "patterns": [
+      "google-analytics.com/analytics.js"
+    ],
+    "dependencies": [],
+    "category": "analytics",
+    "categoryLabel": "Analytics",
+    "summary": "Legacy Google analytics tracking (sunset July 2023)",
+    "dataTypeCount": 6,
+    "cookieNames": [
+      "_ga",
+      "_gid",
+      "_gat"
+    ],
+    "thirdPartyName": "Google LLC",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Google Tag Manager",
+    "patterns": [
+      "googletagmanager.com/gtm.js"
+    ],
+    "dependencies": [
+      "@react-native-firebase/analytics",
+      "react-native-google-analytics-bridge"
+    ],
+    "category": "tag_manager",
+    "categoryLabel": "Tag Manager",
+    "summary": "Container that loads and manages other tracking tags",
+    "dataTypeCount": 1,
+    "cookieNames": [],
+    "thirdPartyName": "Google LLC",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Hotjar",
+    "patterns": [
+      "static.hotjar.com",
+      "hotjar.com/c/hotjar-",
+      "hjSiteSettings"
+    ],
+    "dependencies": [],
+    "category": "analytics",
+    "categoryLabel": "Analytics",
+    "summary": "Records user sessions with heatmaps and session replays",
+    "dataTypeCount": 6,
+    "cookieNames": [
+      "_hjSessionUser_*",
+      "_hjSession_*",
+      "_hjIncludedInSessionSample_*"
+    ],
+    "thirdPartyName": "Hotjar Ltd",
+    "thirdPartyCountry": "Malta (EU)"
+  },
+  {
+    "name": "Microsoft Clarity",
+    "patterns": [
+      "clarity.ms/tag/",
+      "clarity.ms/s/"
+    ],
+    "dependencies": [],
+    "category": "analytics",
+    "categoryLabel": "Analytics",
+    "summary": "Free session recordings and heatmaps from Microsoft",
+    "dataTypeCount": 6,
+    "cookieNames": [
+      "_clck",
+      "_clsk"
+    ],
+    "thirdPartyName": "Microsoft Corporation",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Mixpanel",
+    "patterns": [
+      "cdn.mxpnl.com",
+      "mixpanel.com/track",
+      "mixpanel.init"
+    ],
+    "dependencies": [
+      "mixpanel-browser",
+      "mixpanel-react-native",
+      "com.mixpanel.android:mixpanel-android",
+      "Mixpanel"
+    ],
+    "category": "analytics",
+    "categoryLabel": "Analytics",
+    "summary": "Tracks user events, actions, and custom properties",
+    "dataTypeCount": 5,
+    "cookieNames": [
+      "mp_*"
+    ],
+    "thirdPartyName": "Mixpanel Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Amplitude",
+    "patterns": [
+      "cdn.amplitude.com",
+      "amplitude.com/libs/",
+      "amplitude.init"
+    ],
+    "dependencies": [
+      "@amplitude/analytics-react-native",
+      "amplitude-js",
+      "com.amplitude:android-sdk",
+      "Amplitude"
+    ],
+    "category": "analytics",
+    "categoryLabel": "Analytics",
+    "summary": "Product analytics tracking user events and behavior",
+    "dataTypeCount": 5,
+    "cookieNames": [
+      "amp_*"
+    ],
+    "thirdPartyName": "Amplitude Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "PostHog",
+    "patterns": [
+      "posthog.com/static/",
+      "app.posthog.com",
+      "posthog.init"
+    ],
+    "dependencies": [
+      "posthog-js",
+      "posthog-react-native",
+      "posthog-node"
+    ],
+    "category": "analytics",
+    "categoryLabel": "Analytics",
+    "summary": "Open-source product analytics with session recordings",
+    "dataTypeCount": 4,
+    "cookieNames": [
+      "ph_*"
+    ],
+    "thirdPartyName": "PostHog Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Plausible Analytics",
+    "patterns": [
+      "plausible.io/js/",
+      "plausible.io/api/"
+    ],
+    "dependencies": [],
+    "category": "analytics",
+    "categoryLabel": "Analytics",
+    "summary": "Privacy-friendly, cookieless web analytics",
+    "dataTypeCount": 5,
+    "cookieNames": [],
+    "thirdPartyName": "Plausible Insights OÜ",
+    "thirdPartyCountry": "Estonia (EU)"
+  },
+  {
+    "name": "Segment",
+    "patterns": [
+      "cdn.segment.com",
+      "segment.com/analytics.js",
+      "analytics.identify"
+    ],
+    "dependencies": [
+      "@segment/analytics-react-native",
+      "analytics-node",
+      "com.segment.analytics.android:analytics"
+    ],
+    "category": "analytics",
+    "categoryLabel": "Analytics",
+    "summary": "Customer data platform routing events to downstream tools",
+    "dataTypeCount": 1,
+    "cookieNames": [
+      "ajs_*"
+    ],
+    "thirdPartyName": "Segment (Twilio Inc)",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Firebase Analytics",
+    "patterns": [],
+    "dependencies": [
+      "firebase",
+      "@react-native-firebase/app",
+      "@react-native-firebase/analytics",
+      "com.google.firebase:firebase-analytics",
+      "firebase_analytics",
+      "firebase_core"
+    ],
+    "category": "analytics",
+    "categoryLabel": "Analytics",
+    "summary": "Mobile app analytics tracking screens and engagement",
+    "dataTypeCount": 6,
+    "cookieNames": [],
+    "thirdPartyName": "Google LLC",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Flurry Analytics",
+    "patterns": [],
+    "dependencies": [
+      "react-native-flurry-sdk",
+      "com.flurry.android:analytics",
+      "Flurry-iOS-SDK"
+    ],
+    "category": "analytics",
+    "categoryLabel": "Analytics",
+    "summary": "Mobile app usage and crash analytics",
+    "dataTypeCount": 4,
+    "cookieNames": [],
+    "thirdPartyName": "Yahoo (Verizon Media)",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Heap Analytics",
+    "patterns": [
+      "heap-api",
+      "heapanalytics.com",
+      "heap.load"
+    ],
+    "dependencies": [
+      "@heap/react-native-heap"
+    ],
+    "category": "analytics",
+    "categoryLabel": "Analytics",
+    "summary": "Auto-captures all user interactions without manual tracking",
+    "dataTypeCount": 5,
+    "cookieNames": [
+      "_hp2_*"
+    ],
+    "thirdPartyName": "Heap Inc (Contentsquare)",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Fathom Analytics",
+    "patterns": [
+      "cdn.usefathom.com",
+      "usefathom.com/script"
+    ],
+    "dependencies": [],
+    "category": "analytics",
+    "categoryLabel": "Analytics",
+    "summary": "Privacy-friendly, cookieless web analytics",
+    "dataTypeCount": 4,
+    "cookieNames": [],
+    "thirdPartyName": "Conva Ventures Inc",
+    "thirdPartyCountry": "Canada"
+  },
+  {
+    "name": "Clicky",
+    "patterns": [
+      "static.getclicky.com",
+      "clicky.com/js"
+    ],
+    "dependencies": [],
+    "category": "analytics",
+    "categoryLabel": "Analytics",
+    "summary": "Real-time web analytics with visitor tracking",
+    "dataTypeCount": 4,
+    "cookieNames": [],
+    "thirdPartyName": "Roxr Software Ltd",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "StatCounter",
+    "patterns": [
+      "statcounter.com/counter/",
+      "sc_project"
+    ],
+    "dependencies": [],
+    "category": "analytics",
+    "categoryLabel": "Analytics",
+    "summary": "Web traffic analytics and visitor statistics",
+    "dataTypeCount": 4,
+    "cookieNames": [],
+    "thirdPartyName": "StatCounter",
+    "thirdPartyCountry": "Ireland (EU)"
+  },
+  {
+    "name": "Yandex Metrica",
+    "patterns": [
+      "mc.yandex.ru",
+      "metrika.yandex.ru"
+    ],
+    "dependencies": [],
+    "category": "analytics",
+    "categoryLabel": "Analytics",
+    "summary": "Analytics with session recordings and heatmaps",
+    "dataTypeCount": 5,
+    "cookieNames": [],
+    "thirdPartyName": "Yandex LLC",
+    "thirdPartyCountry": "Russia"
+  },
+  {
+    "name": "Meta Pixel (Facebook)",
+    "patterns": [
+      "connect.facebook.net/en_US/fbevents.js",
+      "facebook.com/tr",
+      "fbq("
+    ],
+    "dependencies": [
+      "react-native-fbsdk-next",
+      "com.facebook.android:facebook-android-sdk",
+      "FBSDKCoreKit"
+    ],
+    "category": "advertising",
+    "categoryLabel": "Advertising",
+    "summary": "Tracks conversions and builds ad audiences for Meta",
+    "dataTypeCount": 7,
+    "cookieNames": [
+      "_fbp",
+      "_fbc"
+    ],
+    "thirdPartyName": "Meta Platforms Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "TikTok Pixel",
+    "patterns": [
+      "analytics.tiktok.com",
+      "tiktok.com/i18n/pixel"
+    ],
+    "dependencies": [
+      "tiktok-business-sdk"
+    ],
+    "category": "advertising",
+    "categoryLabel": "Advertising",
+    "summary": "Tracks conversions for TikTok ad campaigns",
+    "dataTypeCount": 6,
+    "cookieNames": [
+      "_ttp"
+    ],
+    "thirdPartyName": "TikTok Inc / ByteDance Ltd",
+    "thirdPartyCountry": "United States / China"
+  },
+  {
+    "name": "Google Ads / AdSense",
+    "patterns": [
+      "googleads.g.doubleclick.net",
+      "pagead2.googlesyndication.com",
+      "adsbygoogle",
+      "google.com/pagead/"
+    ],
+    "dependencies": [
+      "react-native-google-mobile-ads",
+      "com.google.android.gms:play-services-ads",
+      "Google-Mobile-Ads-SDK",
+      "google_mobile_ads"
+    ],
+    "category": "advertising",
+    "categoryLabel": "Advertising",
+    "summary": "Tracks conversions and serves display advertising",
+    "dataTypeCount": 5,
+    "cookieNames": [
+      "_gcl_au",
+      "IDE"
+    ],
+    "thirdPartyName": "Google LLC",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "LinkedIn Insight Tag",
+    "patterns": [
+      "snap.licdn.com/li.lms-analytics",
+      "linkedin.com/px"
+    ],
+    "dependencies": [],
+    "category": "advertising",
+    "categoryLabel": "Advertising",
+    "summary": "Tracks conversions for LinkedIn ad campaigns",
+    "dataTypeCount": 4,
+    "cookieNames": [
+      "li_sugr",
+      "bcookie"
+    ],
+    "thirdPartyName": "LinkedIn Corporation (Microsoft)",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Pinterest Tag",
+    "patterns": [
+      "pintrk(",
+      "ct.pinterest.com"
+    ],
+    "dependencies": [],
+    "category": "advertising",
+    "categoryLabel": "Advertising",
+    "summary": "Tracks conversions for Pinterest ad campaigns",
+    "dataTypeCount": 3,
+    "cookieNames": [],
+    "thirdPartyName": "Pinterest Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Twitter/X Pixel",
+    "patterns": [
+      "static.ads-twitter.com",
+      "t.co/i/adsct",
+      "twq("
+    ],
+    "dependencies": [],
+    "category": "advertising",
+    "categoryLabel": "Advertising",
+    "summary": "Tracks conversions for X/Twitter ad campaigns",
+    "dataTypeCount": 4,
+    "cookieNames": [],
+    "thirdPartyName": "X Corp",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Snapchat Pixel",
+    "patterns": [
+      "sc-static.net/scevent.min.js",
+      "snaptr("
+    ],
+    "dependencies": [],
+    "category": "advertising",
+    "categoryLabel": "Advertising",
+    "summary": "Tracks conversions for Snapchat ad campaigns",
+    "dataTypeCount": 2,
+    "cookieNames": [],
+    "thirdPartyName": "Snap Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Microsoft Advertising (Bing UET)",
+    "patterns": [
+      "bat.bing.com",
+      "UET tag"
+    ],
+    "dependencies": [],
+    "category": "advertising",
+    "categoryLabel": "Advertising",
+    "summary": "Tracks conversions for Bing/Microsoft ad campaigns",
+    "dataTypeCount": 3,
+    "cookieNames": [],
+    "thirdPartyName": "Microsoft Corporation",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Unity Ads",
+    "patterns": [],
+    "dependencies": [
+      "com.unity3d.ads",
+      "react-native-unity-ads",
+      "UnityAds"
+    ],
+    "category": "advertising",
+    "categoryLabel": "Advertising",
+    "summary": "In-app advertising for mobile games",
+    "dataTypeCount": 4,
+    "cookieNames": [],
+    "thirdPartyName": "Unity Technologies",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "AppLovin",
+    "patterns": [],
+    "dependencies": [
+      "com.applovin:applovin-sdk",
+      "AppLovinSDK"
+    ],
+    "category": "advertising",
+    "categoryLabel": "Advertising",
+    "summary": "In-app advertising and monetization platform",
+    "dataTypeCount": 3,
+    "cookieNames": [],
+    "thirdPartyName": "AppLovin Corporation",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Meta Audience Network",
+    "patterns": [],
+    "dependencies": [
+      "com.facebook.android:audience-network-sdk",
+      "FBAudienceNetwork"
+    ],
+    "category": "advertising",
+    "categoryLabel": "Advertising",
+    "summary": "In-app advertising via Meta ad network",
+    "dataTypeCount": 3,
+    "cookieNames": [],
+    "thirdPartyName": "Meta Platforms Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Stripe",
+    "patterns": [
+      "js.stripe.com",
+      "stripe.com/v3",
+      "Stripe("
+    ],
+    "dependencies": [
+      "@stripe/stripe-react-native",
+      "stripe",
+      "com.stripe:stripe-android",
+      "Stripe",
+      "stripe_sdk"
+    ],
+    "category": "payments",
+    "categoryLabel": "Payments",
+    "summary": "Processes payments, subscriptions, and fraud prevention",
+    "dataTypeCount": 6,
+    "cookieNames": [
+      "__stripe_mid",
+      "__stripe_sid"
+    ],
+    "thirdPartyName": "Stripe Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "PayPal",
+    "patterns": [
+      "paypal.com/sdk/js",
+      "paypalobjects.com"
+    ],
+    "dependencies": [
+      "react-native-paypal",
+      "paypal-checkout"
+    ],
+    "category": "payments",
+    "categoryLabel": "Payments",
+    "summary": "Online payment processing and checkout",
+    "dataTypeCount": 5,
+    "cookieNames": [
+      "tsrce"
+    ],
+    "thirdPartyName": "PayPal Holdings Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Shopify Payments",
+    "patterns": [
+      "cdn.shopify.com",
+      "myshopify.com"
+    ],
+    "dependencies": [],
+    "category": "ecommerce",
+    "categoryLabel": "E-commerce",
+    "summary": "E-commerce platform with payments and storefront",
+    "dataTypeCount": 6,
+    "cookieNames": [
+      "_shopify_s",
+      "_shopify_y",
+      "cart"
+    ],
+    "thirdPartyName": "Shopify Inc",
+    "thirdPartyCountry": "Canada"
+  },
+  {
+    "name": "WooCommerce",
+    "patterns": [
+      "woocommerce",
+      "wc-ajax",
+      "wp-content/plugins/woocommerce"
+    ],
+    "dependencies": [],
+    "category": "ecommerce",
+    "categoryLabel": "E-commerce",
+    "summary": "Self-hosted WordPress e-commerce plugin",
+    "dataTypeCount": 4,
+    "cookieNames": [
+      "woocommerce_cart_hash",
+      "woocommerce_items_in_cart"
+    ],
+    "thirdPartyName": "Self-hosted plugin (Automattic Inc)",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Paddle",
+    "patterns": [
+      "paddle.com/api",
+      "cdn.paddle.com",
+      "Paddle.Setup"
+    ],
+    "dependencies": [
+      "@paddle/paddle-js"
+    ],
+    "category": "payments",
+    "categoryLabel": "Payments",
+    "summary": "Payment processing and subscription management",
+    "dataTypeCount": 4,
+    "cookieNames": [],
+    "thirdPartyName": "Paddle.com Market Ltd",
+    "thirdPartyCountry": "United Kingdom"
+  },
+  {
+    "name": "RevenueCat",
+    "patterns": [],
+    "dependencies": [
+      "react-native-purchases",
+      "purchases-ios",
+      "com.revenuecat.purchases:purchases",
+      "purchases_flutter"
+    ],
+    "category": "payments",
+    "categoryLabel": "Payments",
+    "summary": "Manages in-app subscriptions across platforms",
+    "dataTypeCount": 4,
+    "cookieNames": [],
+    "thirdPartyName": "RevenueCat Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Apple In-App Purchases",
+    "patterns": [],
+    "dependencies": [
+      "react-native-iap",
+      "expo-in-app-purchases",
+      "StoreKit"
+    ],
+    "category": "payments",
+    "categoryLabel": "Payments",
+    "summary": "Native iOS in-app purchases and subscriptions",
+    "dataTypeCount": 3,
+    "cookieNames": [],
+    "thirdPartyName": "Apple Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Google Play Billing",
+    "patterns": [],
+    "dependencies": [
+      "com.android.billingclient:billing",
+      "react-native-iap"
+    ],
+    "category": "payments",
+    "categoryLabel": "Payments",
+    "summary": "Native Android in-app purchases and subscriptions",
+    "dataTypeCount": 3,
+    "cookieNames": [],
+    "thirdPartyName": "Google LLC",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Intercom",
+    "patterns": [
+      "widget.intercom.io",
+      "js.intercomcdn.com",
+      "Intercom("
+    ],
+    "dependencies": [
+      "@intercom/intercom-react-native",
+      "intercom-ios",
+      "io.intercom.android:intercom-sdk"
+    ],
+    "category": "chat",
+    "categoryLabel": "Live Chat",
+    "summary": "Customer messaging with live chat and help desk",
+    "dataTypeCount": 6,
+    "cookieNames": [
+      "intercom-id-*",
+      "intercom-session-*"
+    ],
+    "thirdPartyName": "Intercom Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Crisp",
+    "patterns": [
+      "client.crisp.chat",
+      "crisp.chat/l.js"
+    ],
+    "dependencies": [],
+    "category": "chat",
+    "categoryLabel": "Live Chat",
+    "summary": "Live chat and customer support widget",
+    "dataTypeCount": 5,
+    "cookieNames": [
+      "crisp-client/*"
+    ],
+    "thirdPartyName": "Crisp IM SAS",
+    "thirdPartyCountry": "France (EU)"
+  },
+  {
+    "name": "Drift",
+    "patterns": [
+      "js.driftt.com",
+      "drift.com"
+    ],
+    "dependencies": [],
+    "category": "chat",
+    "categoryLabel": "Live Chat",
+    "summary": "Conversational marketing and live chat",
+    "dataTypeCount": 4,
+    "cookieNames": [],
+    "thirdPartyName": "Drift (Salesloft Inc)",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Zendesk",
+    "patterns": [
+      "static.zdassets.com",
+      "zendesk.com/embeddable"
+    ],
+    "dependencies": [
+      "react-native-zendesk-messaging",
+      "ZendeskSDK"
+    ],
+    "category": "chat",
+    "categoryLabel": "Live Chat",
+    "summary": "Customer support with chat and ticketing",
+    "dataTypeCount": 5,
+    "cookieNames": [
+      "__zlcmid"
+    ],
+    "thirdPartyName": "Zendesk Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Tidio",
+    "patterns": [
+      "code.tidio.co",
+      "tidio.com"
+    ],
+    "dependencies": [],
+    "category": "chat",
+    "categoryLabel": "Live Chat",
+    "summary": "Live chat and chatbot for customer support",
+    "dataTypeCount": 3,
+    "cookieNames": [],
+    "thirdPartyName": "Tidio LLC",
+    "thirdPartyCountry": "United States/Poland"
+  },
+  {
+    "name": "LiveChat",
+    "patterns": [
+      "cdn.livechatinc.com",
+      "livechatinc.com"
+    ],
+    "dependencies": [],
+    "category": "chat",
+    "categoryLabel": "Live Chat",
+    "summary": "Live chat platform for customer support",
+    "dataTypeCount": 4,
+    "cookieNames": [],
+    "thirdPartyName": "LiveChat Inc",
+    "thirdPartyCountry": "Poland (EU)"
+  },
+  {
+    "name": "Mailchimp",
+    "patterns": [
+      "chimpstatic.com",
+      "list-manage.com",
+      "mailchimp.com"
+    ],
+    "dependencies": [],
+    "category": "email",
+    "categoryLabel": "Email Marketing",
+    "summary": "Email marketing campaigns and subscriber management",
+    "dataTypeCount": 5,
+    "cookieNames": [],
+    "thirdPartyName": "The Rocket Science Group LLC (Intuit)",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "HubSpot",
+    "patterns": [
+      "js.hs-scripts.com",
+      "js.hubspot.com",
+      "hubspot.com/analytics"
+    ],
+    "dependencies": [],
+    "category": "crm",
+    "categoryLabel": "CRM & Marketing",
+    "summary": "CRM with marketing automation and analytics tracking",
+    "dataTypeCount": 7,
+    "cookieNames": [
+      "__hssc",
+      "__hssrc",
+      "__hstc",
+      "hubspotutk"
+    ],
+    "thirdPartyName": "HubSpot Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "ConvertKit (Kit)",
+    "patterns": [
+      "convertkit.com",
+      "ck.page",
+      "convertkit-"
+    ],
+    "dependencies": [],
+    "category": "email",
+    "categoryLabel": "Email Marketing",
+    "summary": "Email marketing for creators and newsletters",
+    "dataTypeCount": 4,
+    "cookieNames": [],
+    "thirdPartyName": "ConvertKit LLC (now Kit)",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Klaviyo",
+    "patterns": [
+      "static.klaviyo.com",
+      "klaviyo.com",
+      "_learnq"
+    ],
+    "dependencies": [],
+    "category": "email",
+    "categoryLabel": "Email Marketing",
+    "summary": "E-commerce email marketing with behavior tracking",
+    "dataTypeCount": 4,
+    "cookieNames": [
+      "__kla_id"
+    ],
+    "thirdPartyName": "Klaviyo Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "ActiveCampaign",
+    "patterns": [
+      "trackcmp.net",
+      "activecampaign.com"
+    ],
+    "dependencies": [],
+    "category": "email",
+    "categoryLabel": "Email Marketing",
+    "summary": "Email marketing and marketing automation",
+    "dataTypeCount": 4,
+    "cookieNames": [],
+    "thirdPartyName": "ActiveCampaign Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Brevo (Sendinblue)",
+    "patterns": [
+      "sibautomation.com",
+      "sendinblue.com",
+      "brevo.com"
+    ],
+    "dependencies": [],
+    "category": "email",
+    "categoryLabel": "Email Marketing",
+    "summary": "Email marketing and transactional email service",
+    "dataTypeCount": 3,
+    "cookieNames": [],
+    "thirdPartyName": "Brevo (formerly Sendinblue)",
+    "thirdPartyCountry": "France (EU)"
+  },
+  {
+    "name": "Google reCAPTCHA",
+    "patterns": [
+      "google.com/recaptcha",
+      "recaptcha.net",
+      "grecaptcha"
+    ],
+    "dependencies": [],
+    "category": "security",
+    "categoryLabel": "Security",
+    "summary": "Bot detection using behavioral analysis",
+    "dataTypeCount": 6,
+    "cookieNames": [
+      "_GRECAPTCHA"
+    ],
+    "thirdPartyName": "Google LLC",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "hCaptcha",
+    "patterns": [
+      "hcaptcha.com",
+      "hcaptcha"
+    ],
+    "dependencies": [],
+    "category": "security",
+    "categoryLabel": "Security",
+    "summary": "Privacy-focused bot detection and CAPTCHA",
+    "dataTypeCount": 3,
+    "cookieNames": [],
+    "thirdPartyName": "Intuition Machines Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Cloudflare Turnstile",
+    "patterns": [
+      "challenges.cloudflare.com/turnstile",
+      "cf-turnstile"
+    ],
+    "dependencies": [],
+    "category": "security",
+    "categoryLabel": "Security",
+    "summary": "Privacy-focused bot detection without visual CAPTCHAs",
+    "dataTypeCount": 2,
+    "cookieNames": [],
+    "thirdPartyName": "Cloudflare Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Auth0",
+    "patterns": [
+      "auth0.com",
+      "cdn.auth0.com"
+    ],
+    "dependencies": [
+      "react-native-auth0",
+      "auth0-js",
+      "Auth0.swift",
+      "com.auth0.android:auth0"
+    ],
+    "category": "authentication",
+    "categoryLabel": "Authentication",
+    "summary": "Authentication and user management platform",
+    "dataTypeCount": 4,
+    "cookieNames": [],
+    "thirdPartyName": "Auth0 (Okta Inc)",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Firebase Auth",
+    "patterns": [],
+    "dependencies": [
+      "@react-native-firebase/auth",
+      "firebase/auth",
+      "com.google.firebase:firebase-auth",
+      "firebase_auth"
+    ],
+    "category": "authentication",
+    "categoryLabel": "Authentication",
+    "summary": "User authentication with email, phone, and OAuth",
+    "dataTypeCount": 6,
+    "cookieNames": [],
+    "thirdPartyName": "Google LLC",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Supabase Auth",
+    "patterns": [
+      "supabase.co",
+      "supabase.com"
+    ],
+    "dependencies": [
+      "@supabase/supabase-js",
+      "supabase_flutter",
+      "supabase"
+    ],
+    "category": "authentication",
+    "categoryLabel": "Authentication",
+    "summary": "Authentication with email, OAuth, and magic links",
+    "dataTypeCount": 5,
+    "cookieNames": [],
+    "thirdPartyName": "Supabase Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Clerk",
+    "patterns": [
+      "clerk.com",
+      "clerk.dev"
+    ],
+    "dependencies": [
+      "@clerk/clerk-react",
+      "@clerk/nextjs",
+      "@clerk/clerk-expo"
+    ],
+    "category": "authentication",
+    "categoryLabel": "Authentication",
+    "summary": "User authentication with pre-built UI components",
+    "dataTypeCount": 6,
+    "cookieNames": [],
+    "thirdPartyName": "Clerk Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Apple Sign-In",
+    "patterns": [],
+    "dependencies": [
+      "@invertase/react-native-apple-authentication",
+      "expo-apple-authentication",
+      "sign_in_with_apple"
+    ],
+    "category": "authentication",
+    "categoryLabel": "Authentication",
+    "summary": "Sign-in via Apple ID with email privacy relay",
+    "dataTypeCount": 3,
+    "cookieNames": [],
+    "thirdPartyName": "Apple Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Google Sign-In",
+    "patterns": [],
+    "dependencies": [
+      "@react-native-google-signin/google-signin",
+      "com.google.android.gms:play-services-auth",
+      "GoogleSignIn"
+    ],
+    "category": "authentication",
+    "categoryLabel": "Authentication",
+    "summary": "Sign-in via Google account",
+    "dataTypeCount": 3,
+    "cookieNames": [],
+    "thirdPartyName": "Google LLC",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Firebase Cloud Messaging",
+    "patterns": [],
+    "dependencies": [
+      "@react-native-firebase/messaging",
+      "com.google.firebase:firebase-messaging",
+      "firebase_messaging"
+    ],
+    "category": "push_notifications",
+    "categoryLabel": "Push Notifications",
+    "summary": "Push notification delivery for mobile apps",
+    "dataTypeCount": 3,
+    "cookieNames": [],
+    "thirdPartyName": "Google LLC",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "OneSignal",
+    "patterns": [],
+    "dependencies": [
+      "react-native-onesignal",
+      "com.onesignal:OneSignal",
+      "OneSignalXCFramework",
+      "onesignal_flutter"
+    ],
+    "category": "push_notifications",
+    "categoryLabel": "Push Notifications",
+    "summary": "Push notification service with user segmentation",
+    "dataTypeCount": 4,
+    "cookieNames": [],
+    "thirdPartyName": "OneSignal Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Expo Notifications",
+    "patterns": [],
+    "dependencies": [
+      "expo-notifications"
+    ],
+    "category": "push_notifications",
+    "categoryLabel": "Push Notifications",
+    "summary": "Push notifications for Expo-built apps",
+    "dataTypeCount": 2,
+    "cookieNames": [],
+    "thirdPartyName": "Expo (650 Industries)",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "WordPress",
+    "patterns": [
+      "wp-content/",
+      "wp-includes/",
+      "wordpress.org"
+    ],
+    "dependencies": [],
+    "category": "cms",
+    "categoryLabel": "CMS",
+    "summary": "Self-hosted content management system",
+    "dataTypeCount": 1,
+    "cookieNames": [
+      "wordpress_*",
+      "wp-settings-*"
+    ],
+    "thirdPartyName": "Unknown",
+    "thirdPartyCountry": "Unknown"
+  },
+  {
+    "name": "Webflow",
+    "patterns": [
+      "assets.website-files.com",
+      "webflow.com",
+      "wf-"
+    ],
+    "dependencies": [],
+    "category": "cms",
+    "categoryLabel": "CMS",
+    "summary": "Visual website builder and CMS",
+    "dataTypeCount": 3,
+    "cookieNames": [],
+    "thirdPartyName": "Webflow Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Squarespace",
+    "patterns": [
+      "squarespace.com",
+      "static1.squarespace.com",
+      "sqsp.net"
+    ],
+    "dependencies": [],
+    "category": "cms",
+    "categoryLabel": "CMS",
+    "summary": "Website builder with e-commerce features",
+    "dataTypeCount": 4,
+    "cookieNames": [
+      "ss_*"
+    ],
+    "thirdPartyName": "Squarespace Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Wix",
+    "patterns": [
+      "static.parastorage.com",
+      "wix.com",
+      "wixsite.com"
+    ],
+    "dependencies": [],
+    "category": "cms",
+    "categoryLabel": "CMS",
+    "summary": "Website builder with apps and e-commerce",
+    "dataTypeCount": 4,
+    "cookieNames": [],
+    "thirdPartyName": "Wix.com Ltd",
+    "thirdPartyCountry": "Israel"
+  },
+  {
+    "name": "Ghost",
+    "patterns": [
+      "ghost.org",
+      "ghost.io",
+      "ghost-"
+    ],
+    "dependencies": [],
+    "category": "cms",
+    "categoryLabel": "CMS",
+    "summary": "Publishing platform for blogs and newsletters",
+    "dataTypeCount": 2,
+    "cookieNames": [],
+    "thirdPartyName": "Ghost Foundation",
+    "thirdPartyCountry": "Singapore"
+  },
+  {
+    "name": "Framer",
+    "patterns": [
+      "framer.com",
+      "framerusercontent.com"
+    ],
+    "dependencies": [],
+    "category": "cms",
+    "categoryLabel": "CMS",
+    "summary": "Design-to-website builder and CMS",
+    "dataTypeCount": 2,
+    "cookieNames": [],
+    "thirdPartyName": "Framer B.V.",
+    "thirdPartyCountry": "Netherlands (EU)"
+  },
+  {
+    "name": "Cookiebot",
+    "patterns": [
+      "consent.cookiebot.com",
+      "CookieConsent"
+    ],
+    "dependencies": [],
+    "category": "consent",
+    "categoryLabel": "Cookie Consent",
+    "summary": "Cookie consent management platform",
+    "dataTypeCount": 0,
+    "cookieNames": [],
+    "thirdPartyName": "Unknown",
+    "thirdPartyCountry": "Unknown"
+  },
+  {
+    "name": "OneTrust",
+    "patterns": [
+      "cdn.cookielaw.org",
+      "onetrust.com",
+      "optanon"
+    ],
+    "dependencies": [],
+    "category": "consent",
+    "categoryLabel": "Cookie Consent",
+    "summary": "Enterprise consent and privacy management",
+    "dataTypeCount": 0,
+    "cookieNames": [],
+    "thirdPartyName": "Unknown",
+    "thirdPartyCountry": "Unknown"
+  },
+  {
+    "name": "Termly",
+    "patterns": [
+      "app.termly.io",
+      "termly.io"
+    ],
+    "dependencies": [],
+    "category": "consent",
+    "categoryLabel": "Cookie Consent",
+    "summary": "Cookie consent and legal policy generator",
+    "dataTypeCount": 0,
+    "cookieNames": [],
+    "thirdPartyName": "Unknown",
+    "thirdPartyCountry": "Unknown"
+  },
+  {
+    "name": "Iubenda",
+    "patterns": [
+      "iubenda.com",
+      "iubenda_cs"
+    ],
+    "dependencies": [],
+    "category": "consent",
+    "categoryLabel": "Cookie Consent",
+    "summary": "Cookie consent and privacy policy management",
+    "dataTypeCount": 0,
+    "cookieNames": [],
+    "thirdPartyName": "Unknown",
+    "thirdPartyCountry": "Unknown"
+  },
+  {
+    "name": "Osano",
+    "patterns": [
+      "cmp.osano.com",
+      "osano.com"
+    ],
+    "dependencies": [],
+    "category": "consent",
+    "categoryLabel": "Cookie Consent",
+    "summary": "Cookie consent and data privacy platform",
+    "dataTypeCount": 0,
+    "cookieNames": [],
+    "thirdPartyName": "Unknown",
+    "thirdPartyCountry": "Unknown"
+  },
+  {
+    "name": "YouTube Embeds",
+    "patterns": [
+      "youtube.com/embed",
+      "youtube-nocookie.com",
+      "ytimg.com"
+    ],
+    "dependencies": [],
+    "category": "media",
+    "categoryLabel": "Media",
+    "summary": "Embedded video player from YouTube",
+    "dataTypeCount": 3,
+    "cookieNames": [
+      "YSC",
+      "VISITOR_INFO1_LIVE"
+    ],
+    "thirdPartyName": "Google LLC (YouTube)",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Vimeo Embeds",
+    "patterns": [
+      "player.vimeo.com",
+      "vimeo.com/video"
+    ],
+    "dependencies": [],
+    "category": "media",
+    "categoryLabel": "Media",
+    "summary": "Embedded video player from Vimeo",
+    "dataTypeCount": 2,
+    "cookieNames": [
+      "vuid"
+    ],
+    "thirdPartyName": "Vimeo Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Google Fonts (remote)",
+    "patterns": [
+      "fonts.googleapis.com",
+      "fonts.gstatic.com"
+    ],
+    "dependencies": [],
+    "category": "infrastructure",
+    "categoryLabel": "Infrastructure",
+    "summary": "Remote font loading from Google CDN",
+    "dataTypeCount": 1,
+    "cookieNames": [],
+    "thirdPartyName": "Google LLC",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Google Maps",
+    "patterns": [
+      "maps.googleapis.com",
+      "maps.google.com"
+    ],
+    "dependencies": [],
+    "category": "media",
+    "categoryLabel": "Media",
+    "summary": "Embedded interactive maps on web pages",
+    "dataTypeCount": 3,
+    "cookieNames": [],
+    "thirdPartyName": "Google LLC",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Gravatar",
+    "patterns": [
+      "gravatar.com",
+      "secure.gravatar.com"
+    ],
+    "dependencies": [],
+    "category": "infrastructure",
+    "categoryLabel": "Infrastructure",
+    "summary": "User avatar images loaded by email hash",
+    "dataTypeCount": 2,
+    "cookieNames": [],
+    "thirdPartyName": "Automattic Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Cloudflare",
+    "patterns": [
+      "cdnjs.cloudflare.com",
+      "cdn-cgi/",
+      "__cf_"
+    ],
+    "dependencies": [],
+    "category": "infrastructure",
+    "categoryLabel": "Infrastructure",
+    "summary": "CDN, DDoS protection, and web security",
+    "dataTypeCount": 2,
+    "cookieNames": [
+      "__cf_bm"
+    ],
+    "thirdPartyName": "Cloudflare Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Vercel",
+    "patterns": [
+      "vercel.app",
+      "_vercel"
+    ],
+    "dependencies": [],
+    "category": "infrastructure",
+    "categoryLabel": "Infrastructure",
+    "summary": "Frontend hosting and deployment platform",
+    "dataTypeCount": 0,
+    "cookieNames": [],
+    "thirdPartyName": "Vercel Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Sentry",
+    "patterns": [
+      "sentry.io",
+      "browser.sentry-cdn.com",
+      "Sentry.init"
+    ],
+    "dependencies": [
+      "@sentry/react-native",
+      "sentry-expo",
+      "io.sentry:sentry-android",
+      "Sentry",
+      "sentry_flutter"
+    ],
+    "category": "error_tracking",
+    "categoryLabel": "Error Tracking",
+    "summary": "Error tracking and performance monitoring",
+    "dataTypeCount": 5,
+    "cookieNames": [],
+    "thirdPartyName": "Functional Software Inc (Sentry)",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Firebase Crashlytics",
+    "patterns": [],
+    "dependencies": [
+      "@react-native-firebase/crashlytics",
+      "com.google.firebase:firebase-crashlytics",
+      "firebase_crashlytics"
+    ],
+    "category": "error_tracking",
+    "categoryLabel": "Error Tracking",
+    "summary": "Crash reporting and diagnostics for mobile apps",
+    "dataTypeCount": 3,
+    "cookieNames": [],
+    "thirdPartyName": "Google LLC",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Bugsnag",
+    "patterns": [],
+    "dependencies": [
+      "@bugsnag/react-native",
+      "com.bugsnag:bugsnag-android",
+      "Bugsnag"
+    ],
+    "category": "error_tracking",
+    "categoryLabel": "Error Tracking",
+    "summary": "Error monitoring and crash reporting",
+    "dataTypeCount": 4,
+    "cookieNames": [],
+    "thirdPartyName": "Bugsnag (SmartBear)",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Firebase Storage / Firestore / Realtime Database",
+    "patterns": [],
+    "dependencies": [
+      "@react-native-firebase/firestore",
+      "@react-native-firebase/storage",
+      "@react-native-firebase/database",
+      "cloud_firestore",
+      "firebase_storage"
+    ],
+    "category": "storage",
+    "categoryLabel": "Storage",
+    "summary": "Cloud storage, database, and real-time data sync",
+    "dataTypeCount": 3,
+    "cookieNames": [],
+    "thirdPartyName": "Google LLC",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "AWS Amplify",
+    "patterns": [],
+    "dependencies": [
+      "aws-amplify",
+      "@aws-amplify/react-native"
+    ],
+    "category": "storage",
+    "categoryLabel": "Storage",
+    "summary": "AWS cloud services for web and mobile apps",
+    "dataTypeCount": 1,
+    "cookieNames": [],
+    "thirdPartyName": "Amazon Web Services",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Google Maps SDK",
+    "patterns": [],
+    "dependencies": [
+      "react-native-maps",
+      "com.google.android.gms:play-services-maps",
+      "GoogleMaps"
+    ],
+    "category": "maps",
+    "categoryLabel": "Maps",
+    "summary": "Native map SDK for mobile applications",
+    "dataTypeCount": 3,
+    "cookieNames": [],
+    "thirdPartyName": "Google LLC",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "MapBox",
+    "patterns": [],
+    "dependencies": [
+      "@rnmapbox/maps",
+      "MapboxMaps"
+    ],
+    "category": "maps",
+    "categoryLabel": "Maps",
+    "summary": "Custom maps and location services for apps",
+    "dataTypeCount": 3,
+    "cookieNames": [],
+    "thirdPartyName": "Mapbox Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Calendly",
+    "patterns": [
+      "assets.calendly.com",
+      "calendly.com/widget"
+    ],
+    "dependencies": [],
+    "category": "scheduling",
+    "categoryLabel": "Scheduling",
+    "summary": "Scheduling and meeting booking widget",
+    "dataTypeCount": 4,
+    "cookieNames": [],
+    "thirdPartyName": "Calendly LLC",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Typeform",
+    "patterns": [
+      "typeform.com",
+      "tf-embed"
+    ],
+    "dependencies": [],
+    "category": "forms",
+    "categoryLabel": "Forms",
+    "summary": "Interactive forms and surveys",
+    "dataTypeCount": 4,
+    "cookieNames": [],
+    "thirdPartyName": "TYPEFORM SL",
+    "thirdPartyCountry": "Spain (EU)"
+  },
+  {
+    "name": "JotForm",
+    "patterns": [
+      "jotform.com",
+      "cdn.jotfor.ms"
+    ],
+    "dependencies": [],
+    "category": "forms",
+    "categoryLabel": "Forms",
+    "summary": "Online form builder and data collection",
+    "dataTypeCount": 2,
+    "cookieNames": [],
+    "thirdPartyName": "JotForm Inc",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "SurveyMonkey",
+    "patterns": [
+      "surveymonkey.com",
+      "smassets.net"
+    ],
+    "dependencies": [],
+    "category": "forms",
+    "categoryLabel": "Forms",
+    "summary": "Online survey and feedback platform",
+    "dataTypeCount": 2,
+    "cookieNames": [],
+    "thirdPartyName": "Momentive (SurveyMonkey)",
+    "thirdPartyCountry": "United States"
+  },
+  {
+    "name": "Trustpilot",
+    "patterns": [
+      "widget.trustpilot.com",
+      "trustpilot.com"
+    ],
+    "dependencies": [],
+    "category": "reviews",
+    "categoryLabel": "Reviews",
+    "summary": "Customer review and reputation management",
+    "dataTypeCount": 3,
+    "cookieNames": [],
+    "thirdPartyName": "Trustpilot A/S",
+    "thirdPartyCountry": "Denmark (EU)"
+  }
+]

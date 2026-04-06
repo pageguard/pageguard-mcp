@@ -1,0 +1,43 @@
+{
+  "name": "pageguard-mcp",
+  "version": "1.0.0",
+  "description": "PageGuard MCP server — privacy compliance scanning for AI coding tools",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "pageguard-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js"
+  },
+  "author": "PageGuard <hello@getpageguard.com> (https://getpageguard.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/getpageguard/pageguard",
+    "directory": "packages/pageguard-mcp"
+  },
+  "homepage": "https://getpageguard.com",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^20.0.0"
+  },
+  "files": [
+    "dist",
+    "signatures.json",
+    "README.md"
+  ],
+  "keywords": [
+    "mcp",
+    "privacy",
+    "compliance",
+    "pageguard",
+    "scanner"
+  ],
+  "license": "MIT"
+}
